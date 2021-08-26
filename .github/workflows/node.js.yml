@@ -26,5 +26,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - run: sudo npm install express
     - run: sudo git clone https://github.com/nityanand86876/node-express-course.git && cd node-express-course
     - run: sudo node server.js
